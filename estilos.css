@@ -1,0 +1,14 @@
+.contenedor{
+    border: 3px darkblue;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: cornflowerblue;
+    color: cornsilk;
+    font-size: larger;
+    font-family: cursive;
+    width: 800px;
+    margin: 0 auto
+}
+body{
+    background-color: currentcolor;
+}

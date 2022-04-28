@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>    
+    <title>Primer trabajo práctico</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">   
+    <link href="estilos.css" rel="stylesheet">    
+</head>  
+<body>  
+      
+<div class="contenedor">
+    
+<label for="NombreApellido">Inserte su nombre y apellido</label>    
+<input type="NombreApellido" required><br/>
+<br/>
+
+<label for="MontoInvertir">Ingrese el monto a invertir</label>    
+<input type="MontoInvertir" required><br/>
+<br/>
+
+<label for="CantidadDias">Ingrese la cantidad de dias</label>   
+<input type="CantidadDias" required><br/>
+<br/>
+
+<label for="ReinvertirCapital">¿Desea reinvertir el capital?</label>
+<select name="capital" id="capital">
+    <option value="si">Si</option>
+    <option value="no">No</option>
+  </select>
+<br/>
+<button>Calcular</button>
+<br/>
+<br/>
+<p>monto final = monto inicial + monto inicial * cantidad días360*porcentaje100</p>
+</div>
+
+</body>  
+</html>
