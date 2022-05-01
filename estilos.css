@@ -12,3 +12,7 @@
 body{
     background-color: currentcolor;
 }
+.error{
+  color: red;
+  font-size: smaller;
+}

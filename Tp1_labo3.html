@@ -11,15 +11,19 @@
 <div class="contenedor">
     
 <label for="NombreApellido">Inserte su nombre y apellido</label>    
-<input type="NombreApellido" required><br/>
+<input type="text" id="NombreApellido" required  ><br/>
 <br/>
 
 <label for="MontoInvertir">Ingrese el monto a invertir</label>    
-<input type="MontoInvertir" required><br/>
-<br/>
+<input type="text" id="MontoInvertir" required><br/>
+<div id="montoError" class="error"></div>
+
+<br/> 
 
 <label for="CantidadDias">Ingrese la cantidad de dias</label>   
-<input type="CantidadDias" required><br/>
+<input type="text" id="CantidadDias"required><br/>
+<div id="diasError" class="error"></div>
+
 <br/>
 
 <label for="ReinvertirCapital">¿Desea reinvertir el capital?</label>
@@ -28,11 +32,14 @@
     <option value="no">No</option>
   </select>
 <br/>
-<button>Calcular</button>
+<button id="btnCalcular">Calcular</button>
 <br/>
+<div id="nombreError" class="error"></div>
+
 <br/>
 <p>monto final = monto inicial + monto inicial * cantidad días360*porcentaje100</p>
 </div>
 
+<script src="script.js"></script>
 </body>  
 </html>
