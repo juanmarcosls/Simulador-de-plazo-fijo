@@ -18,7 +18,7 @@ function verificar(){
     }else{
         varificaMonto(monto);
         varificaDias(dias);
-        
+        calculo(parseInt(monto), dias);
         let error= document.getElementById("nombreError");
         error.innerHTML=""
     }
@@ -43,6 +43,28 @@ function varificaDias(valor){
         let error= document.getElementById("diasError");
         error.innerHTML= "";
     }
+
+}
+
+function calculo(valor, dias){
+    console.log(valor, dias)
+    let intereses=0;
+    if (dias >= 30 && dias<= 60){
+        intereses=0.40
+    }
+    if(dias >60 && dias <= 120){
+        intereses= 0.45
+    }
+    if(dias >120 && dias <= 360){
+        intereses= 0.50
+    }
+    if(dias > 360){
+        intereses= 0.65
+    }
+    console.log(intereses)
+    let montoFinal= valor + (valor * dias/360 * intereses);
+    let resultado= document.getElementById("resultado");
+    resultado.innerHTML= `el monto que recibira es:$ ${Number.parseFloat(montoFinal).toFixed(2)}`
 
 }
 
